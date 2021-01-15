@@ -27,7 +27,9 @@ class DemoApp extends React.Component {
             selectable={true}
             selectMirror={true}
             dayMaxEvents={true}
-            hiddenDays={[ 0 ]} // datesSet will only execute once if this line is commented,
+            /* Uncomment this to trigger the problem
+            hiddenDays={[ 0 ]}
+            */
             weekends={this.props.weekendsVisible}
             datesSet={this.handleDates}
             select={this.handleDateSelect}
