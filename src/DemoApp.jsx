@@ -27,7 +27,9 @@ class DemoApp extends React.Component {
             selectable={true}
             selectMirror={true}
             dayMaxEvents={true}
+            /* Uncomment this to trigger the problem
             hiddenDays={[ 0 ]}
+            */
             weekends={this.props.weekendsVisible}
             datesSet={this.handleDates}
             select={this.handleDateSelect}
